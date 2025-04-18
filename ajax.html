@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX – Web-programozás-1 Előadás Házi feladat</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/ajax.css">
+</head>
+<body>
+    <header>
+        <h1>Web-programozás-1 Előadás Házi feladat</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Főoldal</a></li>
+            <li><a href="table-crud.html">Táblázat</a></li>
+            <li><a href="html5_examples.html">HTML5</a></li>
+            <li><a href="chartjs.html">ChartJS</a></li>
+            <li class="active"><a href="ajax.html">AJAX</a></li>
+            <li><a href="oojs.html">OOJS</a></li>
+            <li><a href="react1.html">React1</a></li>
+            <li><a href="react2.html">React2</a></li>
+        </ul>
+    </nav>
+    <main>
+        <aside>
+            <h2>AJAX műveletek</h2>
+            <p>API-val kommunikáló CRUD alkalmazás.</p>
+        </aside>
+        <div class="content">
+            <h2>API CRUD műveletek</h2>
+            <div class="code-input">
+                <label>Neptun kód: 
+                    <input type="text" id="neptunCode" value="H5KPH4" readonly>
+                </label>
+                <label>Egyedi kód: 
+                    <input type="text" id="customCode" placeholder="efg456" required>
+                </label>
+            </div>
+
+            <!-- Read -->
+            <div class="section">
+                <h3>Adatok lekérése (Read)</h3>
+                <button onclick="readData()">Adatok betöltése</button>
+                <div id="readResult"></div>
+                <div id="stats"></div>
+            </div>
+
+            <!-- Create -->
+            <div class="section">
+                <h3>Új rekord (Create)</h3>
+                <form id="createForm">
+                    <label>Név: <input type="text" id="createName" required maxlength="30"></label>
+                    <label>Magasság: <input type="number" id="createHeight" required></label>
+                    <label>Súly: <input type="number" id="createWeight" required></label>
+                    <button type="submit">Létrehozás</button>
+                    <span id="createMsg"></span>
+                </form>
+            </div>
+
+            <!-- Update -->
+            <div class="section">
+                <h3>Rekord módosítása (Update)</h3>
+                <input type="number" id="updateId" placeholder="ID">
+                <button onclick="getDataForId()">Adatok lekérése</button>
+                <form id="updateForm">
+                    <label>Név: <input type="text" id="updateName" required maxlength="30"></label>
+                    <label>Magasság: <input type="number" id="updateHeight" required></label>
+                    <label>Súly: <input type="number" id="updateWeight" required></label>
+                    <button type="submit">Módosítás</button>
+                    <span id="updateMsg"></span>
+                </form>
+            </div>
+
+            <!-- Delete -->
+            <div class="section">
+                <h3>Rekord törlése (Delete)</h3>
+                <input type="number" id="deleteId" placeholder="ID">
+                <button onclick="deleteData()">Törlés</button>
+                <span id="deleteMsg"></span>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Készítette: Stier Kristóf (H5KPH4)</p>
+    </footer>
+    <script src="js/ajax.js"></script>
+</body>
+</html>
