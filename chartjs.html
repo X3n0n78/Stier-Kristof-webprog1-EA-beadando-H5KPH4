@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChartJS – Web-programozás-1 Előadás Házi feladat</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- ChartJS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Web-programozás-1 Előadás Házi feladat</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Főoldal</a></li>
+            <li><a href="table-crud.html">Táblázat</a></li>
+            <li><a href="html5_examples.html">HTML5</a></li>
+            <li class="active"><a href="chartjs.html">ChartJS</a></li>
+            <li><a href="ajax.html">AJAX</a></li>
+            <li><a href="oojs.html">OOJS</a></li>
+            <li><a href="react.html">React</a></li>
+        </ul>
+    </nav>
+    <main>
+        <aside>
+            <h2>ChartJS példa</h2>
+            <p>Táblázat sorának kiválasztásával diagram ábrázolása.</p>
+        </aside>
+        <div class="content">
+            <h2>Adattáblázat és Diagram</h2>
+            
+            <!-- 5x5-ös táblázat -->
+            <table id="dataTable">
+                <thead>
+                    <tr>
+                        <th>Év 1</th>
+                        <th>Év 2</th>
+                        <th>Év 3</th>
+                        <th>Év 4</th>
+                        <th>Év 5</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>120</td>
+                        <td>230</td>
+                        <td>350</td>
+                        <td>480</td>
+                        <td>520</td>
+                    </tr>
+                    <tr>
+                        <td>80</td>
+                        <td>150</td>
+                        <td>300</td>
+                        <td>400</td>
+                        <td>450</td>
+                    </tr>
+                    <tr>
+                        <td>200</td>
+                        <td>220</td>
+                        <td>240</td>
+                        <td>260</td>
+                        <td>280</td>
+                    </tr>
+                    <tr>
+                        <td>500</td>
+                        <td>450</td>
+                        <td>400</td>
+                        <td>350</td>
+                        <td>300</td>
+                    </tr>
+                    <tr>
+                        <td>100</td>
+                        <td>200</td>
+                        <td>100</td>
+                        <td>200</td>
+                        <td>100</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Diagram helye -->
+            <div class="chart-container">
+                <canvas id="myChart"></canvas>
+            </div>
+            <button onclick="clearChart()">Diagram törlése</button>
+        </div>
+    </main>
+    <footer>
+        <p>Készítette: Stier Kristóf (H5KPH4)</p>
+    </footer>
+    <script src="js/chartjs.js"></script>
+</body>
+</html>
