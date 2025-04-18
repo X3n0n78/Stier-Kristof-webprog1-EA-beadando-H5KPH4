@@ -1,0 +1,47 @@
+.section {
+    margin: 24px 0;
+    padding: 16px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #0001;
+}
+
+.code-input {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.code-input label {
+    flex: 1;
+}
+
+#readResult {
+    margin: 12px 0;
+    padding: 8px;
+    background: #fff;
+    border: 1px solid #dde;
+}
+
+#stats {
+    margin-top: 12px;
+    color: #0055a5;
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+}
+
+form label {
+    display: flex;
+    flex-direction: column;
+    min-width: 120px;
+}
+
+input[type="number"] {
+    max-width: 100px;
+}
