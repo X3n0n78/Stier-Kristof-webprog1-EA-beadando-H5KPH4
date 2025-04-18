@@ -24,7 +24,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "./src/react.html",
+      template: "./src/index.html",
     }),
   ],
   devServer: {
