@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOJS – Web-programozás-1 Előadás Házi feladat</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/oojs.css">
+</head>
+<body>
+    <header>
+        <h1>Web-programozás-1 Előadás Házi feladat</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Főoldal</a></li>
+            <li><a href="table-crud.html">Táblázat</a></li>
+            <li><a href="html5_examples.html">HTML5</a></li>
+            <li><a href="chartjs.html">ChartJS</a></li>
+            <li><a href="ajax.html">AJAX</a></li>
+            <li class="active"><a href="oojs.html">OOJS</a></li>
+            <li><a href="react1.html">React1</a></li>
+            <li><a href="react2.html">React2</a></li>
+        </ul>
+    </nav>
+    <main>
+        <aside>
+            <h2>OOJS példa</h2>
+            <p>Objektumorientált JavaScript alkalmazás – Jegyzetkezelő.</p>
+        </aside>
+        <div class="content">
+            <h2>Jegyzetkezelő (OOJS)</h2>
+            <form id="noteForm">
+                <label>
+                    Cím:
+                    <input type="text" id="noteTitle" required maxlength="30">
+                </label>
+                <label>
+                    Szöveg:
+                    <input type="text" id="noteText" required maxlength="100">
+                </label>
+                <button type="submit">Hozzáadás</button>
+            </form>
+            <div id="notesContainer"></div>
+        </div>
+    </main>
+    <footer>
+        <p>Készítette: Stier Kristóf (H5KPH4)</p>
+    </footer>
+    <script src="js/oojs.js"></script>
+</body>
+</html>
