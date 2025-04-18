@@ -1,0 +1,52 @@
+/* HTML5 példákhoz */
+#dragContainer {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    margin-bottom: 12px;
+}
+#draggable {
+    width: 80px;
+    height: 40px;
+    background: #0055a5;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    cursor: grab;
+    user-select: none;
+}
+#dropzone {
+    width: 120px;
+    height: 50px;
+    background: #e3e9f0;
+    border: 2px dashed #003d73;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    color: #003d73;
+}
+#dropzone.active {
+    background: #cce5ff;
+    border-color: #0055a5;
+}
+canvas {
+    margin: 8px 0;
+}
+hr {
+    margin: 24px 0 16px 0;
+    border: none;
+    border-top: 1.5px solid #e3e9f0;
+}
+#canvasContainer {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin-bottom: 12px;
+}
+#canvasContainer canvas {
+    border: 1px solid #e3e9f0;
+    border-radius: 6px;
+}
