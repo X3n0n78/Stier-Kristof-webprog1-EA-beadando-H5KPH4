@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Táblázat – Web-programozás-1 Előadás Házi feladat</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/table.css">
+</head>
+<body>
+    <header>
+        <h1>Web-programozás-1 Előadás Házi feladat</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Főoldal</a></li>
+            <li class="active"><a href="table.html">Táblázat</a></li>
+            <li><a href="html5.html">HTML5</a></li>
+            <li><a href="chartjs.html">ChartJS</a></li>
+            <li><a href="ajax.html">AJAX</a></li>
+            <li><a href="oojs.html">OOJS</a></li>
+            <li><a href="react.html">React</a></li>
+        </ul>
+    </nav>
+    <main>
+        <aside>
+            <h2>Táblázat menü</h2>
+            <p>CRUD műveletek, rendezés, szűrés, validáció.</p>
+        </aside>
+        <div class="content">
+            <h2>CRUD Táblázat</h2>
+            <!-- Űrlap új sor hozzáadásához -->
+            <form id="addForm">
+                <label>Név: <input type="text" id="name" required minlength="2" maxlength="20"></label>
+                <label>Kor: <input type="number" id="age" required min="1" max="120"></label>
+                <label>Város: <input type="text" id="city" required minlength="2" maxlength="20"></label>
+                <label>Hobbi: <input type="text" id="hobby" required minlength="2" maxlength="20"></label>
+                <button type="submit">Hozzáadás</button>
+                <span id="formMsg"></span>
+            </form>
+
+            <!-- Szűrés/keresés -->
+            <div class="filter-row">
+                <label>Keresés: <input type="text" id="searchInput" placeholder="Keresés bármelyik oszlopban..."></label>
+            </div>
+
+            <!-- Táblázat -->
+            <table id="crudTable">
+                <thead>
+                    <tr>
+                        <th data-col="name">Név &#x25B2;&#x25BC;</th>
+                        <th data-col="age">Kor &#x25B2;&#x25BC;</th>
+                        <th data-col="city">Város &#x25B2;&#x25BC;</th>
+                        <th data-col="hobby">Hobbi &#x25B2;&#x25BC;</th>
+                        <th>Művelet</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Dinamikus feltöltés -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <footer>
+        <p>Készítette: Stier Kristóf (H5KPH4)</p>
+    </footer>
+    <script src="js/table.js"></script>
+</body>
+</html>
