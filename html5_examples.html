@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 példák – Web-programozás-1 Előadás Házi feladat</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/html5.css">
+</head>
+<body>
+    <header>
+        <h1>Web-programozás-1 Előadás Házi feladat</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Főoldal</a></li>
+            <li><a href="table.html">Táblázat</a></li>
+            <li class="active"><a href="html5.html">HTML5</a></li>
+            <li><a href="chartjs.html">ChartJS</a></li>
+            <li><a href="ajax.html">AJAX</a></li>
+            <li><a href="oojs.html">OOJS</a></li>
+            <li><a href="react.html">React</a></li>
+        </ul>
+    </nav>
+    <main>
+        <aside>
+            <h2>HTML5 példák</h2>
+            <p>Különböző HTML5 API-k és újdonságok bemutatása.</p>
+        </aside>
+        <div class="content">
+            <h2>Web Storage példa</h2>
+            <div>
+                <input type="text" id="storageInput" placeholder="Írj be valamit...">
+                <button onclick="saveToStorage()">Mentés</button>
+                <button onclick="loadFromStorage()">Betöltés</button>
+                <span id="storageMsg"></span>
+            </div>
+            <hr>
+
+            <h2>Web Worker példa</h2>
+            <div>
+                <button onclick="startWorker()">Számolás indítása (1-től 1000000-ig)</button>
+                <span id="workerMsg"></span>
+            </div>
+            <hr>
+
+            <h2>Server-Sent Events példa</h2>
+            <div>
+                <button onclick="startSSE()">Élő idő mutatása</button>
+                <span id="sseMsg"></span>
+            </div>
+            <hr>
+
+            <h2>Geolocation API példa</h2>
+            <div>
+                <button onclick="getLocation()">Helyzet lekérése</button>
+                <span id="geoMsg"></span>
+            </div>
+            <hr>
+
+            <h2>Drag and Drop API példa</h2>
+            <div id="dragContainer">
+                <div id="draggable" draggable="true">Húzz engem!</div>
+                <div id="dropzone">Ide dobd!</div>
+            </div>
+            <span id="dragMsg"></span>
+            <hr>
+
+            <h2>Canvas példa</h2>
+            <canvas id="myCanvas" width="300" height="100" style="border:1px solid #888;"></canvas>
+            <button onclick="drawCanvas()">Rajzolj!</button>
+            <hr>
+
+            <h2>SVG példa</h2>
+            <svg width="200" height="100">
+                <rect x="10" y="10" width="60" height="60" fill="#0055a5" />
+                <circle cx="120" cy="40" r="30" fill="#e3e9f0" stroke="#003d73" stroke-width="4"/>
+                <text x="70" y="90" font-size="18" fill="#003d73">SVG szöveg</text>
+            </svg>
+        </div>
+    </main>
+    <footer>
+        <p>Stier Kristof (H5KPH4)</p>
+    </footer>
+    <script src="js/html5.js"></script>
+</body>
+</html>
